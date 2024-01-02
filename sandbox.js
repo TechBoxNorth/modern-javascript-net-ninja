@@ -1,10 +1,14 @@
-let age = 25;
+// type conversion
+let score = "100";
 
-// loose comparison (different types can still be equal)
+// turn the string '100' into a number with the value of 100
+score = Number(score);
+console.log(score + 10);
 
-console.log(age == 25);
-console.log(age == "25"); // also true with loose comparison
+// this will result a NaN (Not n Number)
+//let result = Number("hello");
+//console.log(result);
 
-// strict comparison (different types cannot be equal)
-console.log(age === 25); // true
-console.log(age === "25"); // false because comparing a number with a string
+// turn a number into a string
+let result = String(175);
+console.log(result, typeof result);
