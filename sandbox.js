@@ -1,14 +1,26 @@
-// template strings
-const title = "Best reads of 2019";
-const author = "Mario";
-const likes = 30;
+// Arrays
+let ninjas = ["leonardo", "donatello", "michelangelo", "raphael"]; // zero based array
 
-let result = `The blog called "${title}" by ${author} has ${likes} likes.`;
+// overwrite an element of an array
+//ninjas[1] = "splinter";
+
+//console.log(ninjas);
+
+// array methods
+let result = ninjas.join(" - ");
 console.log(result);
 
-// creating html templates
-let html = `
-    <h2>${title}</h2>
-    <p>By ${author}</p>
-    <span>This blog has ${likes} likes.</span>
-`;
+result = ninjas.indexOf("raphael");
+console.log(result);
+
+// joining arrays together by concatonation
+result = ninjas.concat(["ole", "dole", "doff"]);
+console.log(result);
+
+// an element to the end of the array
+ninjas.push("bengan");
+console.log(ninjas);
+
+// remove the last element of an array
+ninjas.pop();
+console.log(ninjas);
