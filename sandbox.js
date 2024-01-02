@@ -1,9 +1,10 @@
-// booleans
+let age = 25;
 
-let email = "luigi@thenetninja.com";
-let names = ["mario", "luigi", "toad"];
+// loose comparison (different types can still be equal)
 
-//let result = email.includes("!");
-//let result = names.includes("toady");
+console.log(age == 25);
+console.log(age == "25"); // also true with loose comparison
 
-console.log(result);
+// strict comparison (different types cannot be equal)
+console.log(age === 25); // true
+console.log(age === "25"); // false because comparing a number with a string
