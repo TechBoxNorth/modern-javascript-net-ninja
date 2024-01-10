@@ -32,3 +32,15 @@ const bill = (products, tax) => {
 
 let cost = bill(products, tax);
 console.log(cost);
+
+//-------------- functions vs methods ----------------
+const myName = "shaun";
+
+// functions
+const greeting = () => `Hello ${myName}!`;
+resultOne = greeting();
+console.log(resultOne);
+
+// methods
+let resultTwo = myName.toUpperCase();
+console.log(resultTwo);
