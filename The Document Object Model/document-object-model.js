@@ -7,7 +7,7 @@ console.log(para);
 const paras = document.querySelectorAll('p');
 console.log(paras);
 
-*/
+
 
 // get an element ny ID
 const title = document.getElementById('page-title');
@@ -22,3 +22,15 @@ console.log(errors);
 // get elements by their tag name
 const paras = document.getElementsByTagName('p');
 console.log(paras);
+
+*/
+
+// adding and changing page content
+// const para = document.querySelector('p');
+// para.innerText = 'Hello Javascript';
+
+const paras = document.querySelectorAll('p');
+paras.forEach(para => {
+    para.innerText = 'Snigel';
+    para.innerText += ' Björne';
+});
