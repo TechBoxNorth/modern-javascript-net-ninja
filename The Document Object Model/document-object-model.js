@@ -34,3 +34,10 @@ paras.forEach(para => {
     para.innerText = 'Snigel';
     para.innerText += ' Björne';
 });
+
+const content = document.querySelector('.content');
+//content.innerHTML += '<h1>BÖRJE BÖRJAR BLI BÖJLIG!</h1>'
+const people = ['mario', 'luigi', 'toad'];
+people.forEach(person => {
+    content.innerHTML += `<p>${person}</p>`;
+});
