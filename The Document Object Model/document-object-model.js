@@ -23,7 +23,7 @@ console.log(errors);
 const paras = document.getElementsByTagName('p');
 console.log(paras);
 
-*/
+
 
 // adding and changing page content
 // const para = document.querySelector('p');
@@ -41,3 +41,16 @@ const people = ['mario', 'luigi', 'toad'];
 people.forEach(person => {
     content.innerHTML += `<p>${person}</p>`;
 });
+
+*/
+
+// getting and setting attributes
+const link = document.querySelector('a');
+console.log(link.getAttribute('href'));
+link.setAttribute('href', 'https://www.thenetninja.co.uk');
+link.innerText = 'The Net Ninja Website';
+
+const msg = document.querySelector('p');
+console.log(msg.getAttribute('class'));
+msg.setAttribute('class', 'success!');
+msg.setAttribute('style', 'color: green');
